@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "556071861146",
-    "project_id": "delivery-app-19b87",
-    "storage_bucket": "delivery-app-19b87.appspot.com"
+    "project_number": "1098155252766",
+    "project_id": "helpin-360318",
+    "storage_bucket": "helpin-360318.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:556071861146:android:adbd8966f7a9d1b5701823",
+        "mobilesdk_app_id": "1:1098155252766:android:bc9b34b05e0ecc25a9a20f",
         "android_client_info": {
-          "package_name": "com.fraved.restaurant"
+          "package_name": "com.seeds.helpin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "556071861146-vftp91vq78uh2n7h759sjch5kbbsos4d.apps.googleusercontent.com",
+          "client_id": "1098155252766-cvlj0c47mtqf6b9t46bti4jh56u685l7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC7px3WD9Rs0_SoawbS_mlVgGZ1XYobnt0"
+          "current_key": "AIzaSyBrfyUO5HnNbPy4bmELsAFy3qELDPeLRrQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "556071861146-vftp91vq78uh2n7h759sjch5kbbsos4d.apps.googleusercontent.com",
+              "client_id": "1098155252766-cvlj0c47mtqf6b9t46bti4jh56u685l7.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1098155252766-susqifvr0qhk4mrrj2c8m2d4b4v7jb5i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.seeds.helpin"
+              }
             }
           ]
         }

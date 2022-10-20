@@ -6,33 +6,27 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant/domain/bloc/blocs.dart';
 import 'package:restaurant/domain/services/push_notification.dart';
 import 'package:restaurant/presentation/screens/intro/checking_login_screen.dart';
- 
+
 PushNotification pushNotification = PushNotification();
 
-Future<void> _firebaseMessagingBackground( RemoteMessage message ) async {
-
+Future<void> _firebaseMessagingBackground(RemoteMessage message) async {
   await Firebase.initializeApp();
-
 }
 
 void main() async {
-
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackground);
   pushNotification.initNotifacion();
   runApp(MyApp());
 }
- 
 
- 
 class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   void initState() {
     pushNotification.onMessagingListener();
@@ -41,11 +35,12 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.transparent, statusBarIconBrightness: Brightness.dark ));
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.light));
 
     return MultiBlocProvider(
-      providers: [ 
+      providers: [
         BlocProvider(create: (context) => AuthBloc()..add(CheckLoginEvent())),
         BlocProvider(create: (context) => GeneralBloc()),
         BlocProvider(create: (context) => ProductsBloc()),
@@ -60,7 +55,7 @@ class _MyAppState extends State<MyApp> {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Food - Fraved',
+        title: 'Helpin',
         home: CheckingLoginScreen(),
       ),
     );

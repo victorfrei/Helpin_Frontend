@@ -1,5 +1,5 @@
 name: restaurant
-description: Fraved Restaurante Copyright 2022
+description: Helpin Copyright 2022
 
 publish_to: 'none'
 
@@ -35,6 +35,7 @@ dependencies:
   firebase_messaging: ^13.0.0
   firebase_core: ^1.21.1
   flutter_local_notifications: ^9.9.0
+  location: ^4.4.0
 
 dev_dependencies:
   flutter_test:
