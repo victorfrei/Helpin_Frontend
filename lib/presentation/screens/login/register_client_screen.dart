@@ -84,15 +84,15 @@ class _RegisterClientScreenState extends State<RegisterClientScreen> {
             child: Container(
                 alignment: Alignment.center,
                 child: const TextCustom(
-                    text: 'Cancel',
+                    text: 'Voltar',
                     color: ColorsFrave.primaryColor,
                     fontSize: 15)),
           ),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black,
           elevation: 0,
           leadingWidth: 70,
           title: const TextCustom(
-            text: 'Create a Account',
+            text: 'Criar uma Conta',
           ),
           centerTitle: true,
           actions: [
@@ -104,8 +104,8 @@ class _RegisterClientScreenState extends State<RegisterClientScreen> {
                       _lastnameController.text,
                       _phoneController.text,
                       _emailController.text,
-                      _passwordController.text,
-                      userBloc.state.pictureProfilePath));
+                      _passwordController.text));
+                  //  userBloc.state.pictureProfilePath
                 }
               },
               child: Container(
@@ -127,7 +127,7 @@ class _RegisterClientScreenState extends State<RegisterClientScreen> {
                 const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
             children: [
               const SizedBox(height: 20.0),
-              Align(alignment: Alignment.center, child: _PictureRegistre()),
+              // Align(alignment: Alignment.center, child: _PictureRegistre()),
               const SizedBox(height: 40.0),
               const TextCustom(text: 'Name'),
               const SizedBox(height: 5.0),

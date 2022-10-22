@@ -100,7 +100,7 @@ class UserServices {
       String name,
       String lastname,
       String phone,
-      String image,
+      // String image,
       String email,
       String password,
       String nToken) async {
@@ -112,8 +112,8 @@ class UserServices {
       ..fields['phone'] = phone
       ..fields['email'] = email
       ..fields['password'] = password
-      ..fields['notification_token'] = nToken
-      ..files.add(await http.MultipartFile.fromPath('image', image));
+      ..fields['notification_token'] = nToken;
+    // ..files.add(await http.MultipartFile.fromPath('image', image));
 
     final response = await request.send();
     var data = await http.Response.fromStream(response);
